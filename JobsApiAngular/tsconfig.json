@@ -1,7 +1,8 @@
 {
   "compileOnSave": false,
+  "include": ["./JobsClient"], 
   "compilerOptions": {
-    "outDir": "./dist/out-tsc",
+    "outDir": "./wwwroot/JobsClientCompiled/out-tsc",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",

@@ -2,7 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>2.5</TypeScriptToolsVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\JobsClient\**" />
+    <Content Remove="wwwroot\JobsClient\**" />
+    <EmbeddedResource Remove="wwwroot\JobsClient\**" />
+    <None Remove="wwwroot\JobsClient\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
@@ -13,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\JobsClient\" />
+    <Folder Include="wwwroot\JobsClientCompiled\" />
   </ItemGroup>
 
 </Project>
