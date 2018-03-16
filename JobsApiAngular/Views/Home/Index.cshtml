@@ -1,13 +1,19 @@
 ﻿@{
   ViewData["Title"] = "Home Page";
 }
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+@section Scripts
+{
+  <script src="~/JobsClientCompiled/dist/scripts.bundle.js"></script>
+  <script src="~/JobsClientCompiled/dist/inline.bundle.js"></script>
+  <script src="~/JobsClientCompiled/dist/polyfills.bundle.js"></script>
+  <script src="~/JobsClientCompiled/dist/styles.bundle.js"></script>
+  <script src="~/JobsClientCompiled/dist/vendor.bundle.js"></script>
+  <script src="~/JobsClientCompiled/dist/main.bundle.js"></script>
+
+}
 
 <h2>Jobs</h2>
 
 <app-root></app-root>
 
-<script src="~/JobsClientCompiled/dist/inline.bundle.js"></script>
-<script src="~/JobsClientCompiled/dist/polyfills.bundle.js"></script>
-<script src="~/JobsClientCompiled/dist/styles.bundle.js"></script>
-<script src="~/JobsClientCompiled/dist/vendor.bundle.js"></script>
-<script src="~/JobsClientCompiled/dist/main.bundle.js"></script>

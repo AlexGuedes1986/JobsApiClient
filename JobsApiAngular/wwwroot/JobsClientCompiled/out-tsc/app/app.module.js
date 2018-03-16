@@ -8,6 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var platform_browser_1 = require("@angular/platform-browser");
 var core_1 = require("@angular/core");
+var angular_froala_wysiwyg_1 = require("angular-froala-wysiwyg");
+var jobs_component_1 = require("../jobs/jobs.component");
 var app_component_1 = require("./app.component");
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -15,10 +17,10 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         core_1.NgModule({
             declarations: [
-                app_component_1.AppComponent
+                app_component_1.AppComponent, jobs_component_1.JobsComponent
             ],
             imports: [
-                platform_browser_1.BrowserModule
+                platform_browser_1.BrowserModule, angular_froala_wysiwyg_1.FroalaEditorModule.forRoot(), angular_froala_wysiwyg_1.FroalaViewModule.forRoot()
             ],
             providers: [],
             bootstrap: [app_component_1.AppComponent]
